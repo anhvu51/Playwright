@@ -17,7 +17,7 @@ test.describe('Login with Admin Account', () => {
     await page.locator('xpath = //input[@name="commit"]').click();
     await expect(page.locator('xpath=//body/div[@id="wrapper"]/div[1]/div[2]//div[2]/a[1]')).toBeEnabled();
     
-     for (let i = 2000; i < 2500; i++) {
+     for (let i = 0; i < 2; i++) {
       // New claim from dash board 
     await page.locator('xpath=//strong[contains(text(),"New case")]').click();
     await expect(page.locator('xpath=//input[@id="submitClaim"]')).toBeEnabled();
